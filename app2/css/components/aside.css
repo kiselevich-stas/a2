@@ -1,0 +1,216 @@
+@charset "UTF-8";
+.aside {
+  height: 100vh;
+  width: 90px;
+  padding: 0.8rem 0;
+  position: fixed;
+  right: 0;
+  z-index: 400;
+}
+.aside .cross {
+  transition: opacity 1s ease-in-out;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.aside.open .aside-container::after {
+  background: none !important;
+}
+.aside.open .cross {
+  transition: opacity 1s ease-in-out;
+  display: inline-block;
+  margin: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.aside.open .burger {
+  display: none;
+}
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: height 0.4s linear;
+}
+.aside-container::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: 0%;
+  width: 100%;
+  height: 0%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: -1;
+  transition: height 0.4s linear;
+}
+.aside-container.change {
+  transition: height 0.4s linear !important;
+}
+.aside-container.change::after {
+  transition: height 0.4s linear !important;
+  height: 200% !important;
+}
+.aside-btn, .aside-btn.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 124px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 500;
+}
+.aside-btn::after, .aside-btn.close::after {
+  display: block;
+  content: "меню";
+  color: #fff;
+  margin-top: 10px;
+  font-size: 11px;
+  padding: 18px 10px 18px 0px;
+  height: auto;
+  opacity: 1;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.aside-btn:hover .line, .aside-btn.close:hover .line {
+  background: var(--c-primary);
+}
+.aside-btn:hover svg path, .aside-btn.close:hover svg path {
+  fill: var(--c-primary);
+}
+.aside-btn:hover::after, .aside-btn.close:hover::after {
+  color: var(--c-primary);
+}
+.aside-btn.open, .aside-btn.close.open {
+  transition: all 0.3s ease;
+}
+.aside-btn.open #hamburger-1 .line:nth-child(2), .aside-btn.close.open #hamburger-1 .line:nth-child(2) {
+  opacity: 0;
+}
+.aside-btn.open #hamburger-1 .line:nth-child(1), .aside-btn.close.open #hamburger-1 .line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.aside-btn.open #hamburger-1 .line:nth-child(3), .aside-btn.close.open #hamburger-1 .line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+.aside-btn.open .line, .aside-btn.close.open .line {
+  background: var(--c-secondary);
+}
+.aside-btn.open svg path, .aside-btn.close.open svg path {
+  fill: var(--c-secondary);
+}
+.aside-btn.open::after, .aside-btn.close.open::after {
+  content: "закрыть";
+  color: var(--c-secondary);
+}
+.aside-btn.open:hover .line, .aside-btn.close.open:hover .line {
+  background: var(--c-primary);
+}
+.aside-btn.open:hover svg path, .aside-btn.close.open:hover svg path {
+  fill: var(--c-primary);
+}
+.aside-btn.open:hover::after, .aside-btn.close.open:hover::after {
+  color: var(--c-primary);
+}
+.aside-nav-supports {
+  position: absolute;
+  background-color: var(--c-secondary);
+  transition: transform 0.3s;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 0;
+  width: 100%;
+}
+.aside-nav-supports.open {
+  transform: translate(100%, 50%);
+}
+.aside-nav-supports.open.tablet-open {
+  transform: translate(0%, 200%);
+}
+.aside-nav-supports-list {
+  margin: 0;
+  padding: 0;
+}
+.aside-nav-supports-list li {
+  padding: 20px 10px;
+  height: 90px;
+  transition: background 0.3s linear;
+}
+.aside-nav-supports-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}
+.aside-nav-supports-list li a i {
+  color: var(--c-primary);
+  font-size: 21px;
+}
+.aside-nav-supports-list li a span {
+  font-family: "Monserrat", sans-serif;
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: center;
+}
+.aside-nav-supports-list li:hover {
+  background: #3f4f67;
+}
+.aside .toup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 0;
+  z-index: 10;
+  display: none;
+  border-radius: 50%;
+  background-color: var(--c-primary);
+  opacity: 0;
+  margin-bottom: 3px;
+  position: relative;
+}
+.aside .toup::after {
+  display: block;
+  content: "TOP";
+  color: #fff;
+  position: absolute;
+  font-size: 12px;
+  top: -40px;
+  left: 14%;
+  transform: translateX(-50%);
+  height: auto;
+  opacity: 1;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.aside .toup::after:hover {
+  color: var(--c-primary);
+}
+.aside .toup:hover {
+  color: var(--c-secondary);
+}
+.aside .toup:hover::after {
+  color: var(--c-primary);
+}
+.aside .toup.show {
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s linear;
+  display: flex;
+  opacity: 1;
+}
+/*# sourceMappingURL=aside.css.map */

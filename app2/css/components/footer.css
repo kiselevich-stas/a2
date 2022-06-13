@@ -1,0 +1,22 @@
+.footer__copyright {
+  margin-top: 55px;
+  border-top: 1px solid #eeeeee;
+  padding: 40px 0 40px;
+  padding-left: calc((200% - 1500px) / 2);
+  position: relative;
+}
+.footer__copyright p, .footer__copyright a {
+  font-size: 13px;
+  color: #808080;
+  line-height: 1.2;
+}
+.footer__copyright a {
+  transition: color 0.3s ease-in;
+}
+.footer__copyright a:hover {
+  color: var(--c-primary);
+}
+.footer__copyright span {
+  margin: 0 6px;
+}
+/*# sourceMappingURL=footer.css.map */

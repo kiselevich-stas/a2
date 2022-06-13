@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+  :root {
+    --fz: 14px !important;
+  }
+
+  .section-1__descr {
+    font-size: var(--fz-l);
+  }
+
+  .aside-btn {
+    height: 120px;
+  }
+
+  .header__num {
+    margin-right: 10px;
+  }
+
+  .title::after,
+.section-1 .intro-slider__descr::after {
+    top: -15px !important;
+  }
+
+  .section-4-title {
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=Medium.css.map */

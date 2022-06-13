@@ -1,0 +1,127 @@
+.section-6 {
+  height: 100%;
+  width: 100%;
+  background-image: url(./../../img/zabor-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-6 .intro-slider__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.section-6 .intro-slider__wrapper-left {
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.section-6 .intro-slider__wrapper-right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  z-index: 5;
+}
+.section-6 .intro-slider__wrapper-right iframe {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+.section-6-title {
+  color: #555555;
+  margin-bottom: 35px !important;
+}
+.section-6-num {
+  font-size: var(--fz-xl);
+  color: var(--c-primary);
+  font-weight: 700;
+  display: inline !important;
+  transition: color 0.4s ease-in-out;
+}
+.section-6-num:hover {
+  color: var(--c-secondary);
+}
+.section-6-num-last {
+  margin-bottom: 15px !important;
+}
+.section-6-mail {
+  margin-bottom: 85px;
+  font-size: var(--fz-m);
+  color: #808080;
+  font-weight: 700;
+}
+.section-6__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.section-6__office, .section-6__time {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.section-6__office span, .section-6__time span {
+  font-size: var(--fz-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+.section-6__office p, .section-6__time p {
+  font-size: var(--fz-m);
+  color: #555555;
+}
+.section-6-container {
+  padding: 20px;
+  padding-left: calc((200% - 1500px) / 2);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+  transform: translateY(50px);
+}
+.section-6.fadeUppText .section-6-container {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+@media (max-height: 900px) {
+  .section-6 .footer__copyright {
+    margin-top: 20px;
+  }
+  .section-6-mail {
+    margin-bottom: 40px;
+  }
+  .section-6__content {
+    row-gap: 25px;
+  }
+}
+@media (max-height: 610px) {
+  .section-6__content {
+    row-gap: 10px;
+  }
+
+  .section-6-mail {
+    margin-bottom: 10px;
+  }
+
+  .section-6-num-last {
+    margin-bottom: 10px !important;
+  }
+
+  .section-6-title {
+    margin-bottom: 10px !important;
+  }
+
+  .section-6 .footer__copyright {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+}
+/*# sourceMappingURL=section-6.css.map */

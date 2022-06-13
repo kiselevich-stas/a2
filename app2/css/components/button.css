@@ -1,0 +1,39 @@
+.button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400;
+  color: var(--c-white);
+  font-size: 1.2rem;
+  background-color: var(--c-primary);
+  border-radius: 5px;
+  width: 320px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 50px;
+  transition: box-shadow 0.2s ease-in;
+}
+.button:hover {
+  box-shadow: var(--c-secondary) 0 -70px 0 inset;
+}
+.button:hover::after {
+  transform: translateX(5px);
+}
+.button::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 12px;
+  background: url(../../img/btn-arrow.svg);
+  background-size: cover;
+  margin-left: 1.5rem;
+  transition: transform 0.2s linear;
+}
+/*# sourceMappingURL=button.css.map */

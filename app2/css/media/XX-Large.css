@@ -1,0 +1,41 @@
+@media (max-width: 1399px) {
+  :root {
+    --fz: 18px;
+  }
+
+  .header .aside-btn {
+    height: 122px;
+  }
+
+  .section-2-list__link {
+    font-size: 0.8rem;
+  }
+
+  .section-1 .intro-slider-link p {
+    font-size: 14px;
+  }
+
+  .section-3__items {
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+  }
+  .section-5-content {
+    margin-bottom: 40px;
+  }
+  .section-5 .intro-slider-link p {
+    font-size: 14px;
+  }
+  .section-5 .intro-slider-title {
+    margin-bottom: 30px;
+  }
+
+  .section-6-container {
+    padding-top: 130px;
+    padding-bottom: 40px;
+    justify-content: space-around;
+  }
+  .section-6 .footer__copyright {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=XX-Large.css.map */

@@ -1,0 +1,83 @@
+@media (max-width: 576px) {
+  :root {
+    --fz: 12px !important;
+  }
+
+  .header-right .fas {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+  }
+  .header-right .header__num {
+    display: none;
+  }
+  .header .fas {
+    margin-right: 15px;
+  }
+  .header-container {
+    padding: 0 50px 0 20px !important;
+  }
+  .header .menu {
+    width: 100px;
+    height: 50px;
+  }
+
+  .section-1-container {
+    padding-left: 20px;
+  }
+
+  .aside-btn {
+    height: 50px !important;
+  }
+
+  .section-2__content-1 {
+    padding: 150px 50px 150px 20px !important;
+  }
+  .section-2__content-1__title {
+    margin-bottom: 20px !important;
+  }
+  .section-2__content-1__descr {
+    margin-bottom: 15px !important;
+  }
+  .section-2 .circle-right {
+    left: -175px;
+  }
+  .section-2 .slick-dots {
+    left: 20px;
+  }
+
+  .section-3-container {
+    padding: 100px 20px !important;
+  }
+
+  .section-4__wrapper-left {
+    padding: 0 20px !important;
+  }
+  .section-4-title {
+    font-size: 20px;
+  }
+  .section-4-descr {
+    font-size: 15px;
+  }
+  .section-4 .swiper-button-prev,
+.section-4 .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section-5-container {
+    padding: 0 20px !important;
+  }
+
+  .section-6-container {
+    padding: 50px 20px !important;
+  }
+  .section-6 .footer__copyright {
+    padding: 20px 0px !important;
+    text-align: center;
+  }
+  .section-6 .footer__copyright p, .section-6 .footer__copyright a {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=Small.css.map */

@@ -1,0 +1,100 @@
+.section-5 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.section-5-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.section-5-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.section-5-content {
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+  transform: translateY(50px);
+  margin-bottom: 110px;
+}
+.section-5.fadeUppText .section-5-content {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.section-5 .intro-slider__contnet {
+  margin-top: auto;
+}
+.section-5 .intro-slider__title {
+  color: #fff;
+  font-size: var(--fz-xl);
+  margin-bottom: 54px;
+  position: relative;
+}
+.section-5 .intro-slider__title::after {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: 0;
+  border: 1px solid var(--c-primary);
+  width: 80px;
+}
+.section-5 .intro-slider__descr {
+  font-size: var(--fz-m);
+  position: relative;
+}
+.section-5 .intro-slider__descr:not(:last-child) {
+  margin-bottom: 26px;
+}
+.section-5 .intro-slider__list {
+  display: flex;
+  position: relative;
+}
+.section-5 .intro-slider-item-container {
+  z-index: 1;
+  display: flex;
+}
+.section-5 .intro-slider-item {
+  display: flex;
+  align-items: center;
+}
+.section-5 .intro-slider-item.active {
+  cursor: pointer;
+  background-color: var(--c-secondary);
+  width: 300px;
+  margin-right: 50px;
+}
+.section-5 .intro-slider-item.active i {
+  display: none;
+}
+.section-5 .intro-slider-item.active p {
+  font-size: var(--fz-s);
+  font-weight: bold;
+}
+.section-5 .intro-slider-item p {
+  font-size: var(--fz-xs);
+  font-weight: normal;
+}
+.section-5 .intro-slider-link {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  width: 100%;
+  padding: 30px 30px;
+}
+.section-5 .intro-slider-link i {
+  color: var(--c-primary);
+}
+.section-5 .intro-slider-link span {
+  font-weight: 700;
+  transition: color 0.3s ease;
+  font-size: var(--fz-s);
+  position: relative;
+  text-align: center;
+}
+/*# sourceMappingURL=section-5.css.map */
